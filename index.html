@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+    <h1>TaskFlow</h1> 
+    <p>Organizador de Atividades</p>
+    </header>
+    <main>
+        <section>
+            <h2>Minhas Atividades</h2>
+            <input type="text" id="taskInput" placeholder="Adicione uma tarefa">
+           
+            <select id="subjectSelect">
+    <option value="">Selecione a matéria</option>
+    <option value="Português">Português</option>
+    <option value="Matemática">Matemática</option>
+    <option value="Química">Química</option>
+    <option value="Física">Física</option>
+    <option value="Biologia">Biologia</option>
+    <option value="História">História</option>
+    <option value="Geografia">Geografia</option>
+    <option value="Inglês">Inglês</option>
+    <option value="Outros">Outros</option>
+</select>
+         <input type="date" id="taskDate">  
+            <button id="addTask">Adicionar</button>
+        </section>
+
+        <section>
+<h2>Lista de Atividades</h2>
+<ul id="taskList">
+</ul>
+        </section>
+
+        <section>
+            <h2>Resumo</h2>
+            <p>Tarefas pendentes: <span id="pendingCount">0</span></p>
+            <p>Tarefas concluídas: <span id="completedCount">0</span></p>
+        </section>
+
+        <section>
+            <h2>Filtrar tarefas</h2>
+            <button id="allTasks">Todas</button>
+            <button id="pendingTasks">Pendentes</button>
+            <button id="completedTasks">Concluídas</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
